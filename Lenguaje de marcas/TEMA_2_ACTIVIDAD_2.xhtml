@@ -1,0 +1,24 @@
+<!-- Identifica los errores que presenta el siguiente documento XHTML, teniendo en cuenta
+las reglas que tiene que cumplir este tipo de documentos. -->
+
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- Nos da que no existe ya que estamos escribiendolo en minuscula, además de faltarle el atributo content y la barra del cierre es obligatoria en la etiqueta meta xhtml -->
+        <meta charset="utf-8">
+        <title>XHTML</title>
+    </head>
+    <body>
+        <!-- La p de parrafo debería estar en mayuscula -->
+        <P id="texto">Ejemplo de documento XHTML con errores</P>
+        <!-- Falta la / de cierre en la etiqueta br -->
+        <br>
+        <!-- falta la / de cierre en el img -->
+        <img src="logo.gif" width="250" height="60" alt="Logo de ejemplo">
+        <!-- La etiqueta b está mal colocada el final -->
+        <p>Contenido en <b>negrita</p></b>
+    </body>
+</html>
