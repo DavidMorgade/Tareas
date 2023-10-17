@@ -1,5 +1,3 @@
-package Programacion;
-
 // Complétalo para que:
 // 1. La salida al ejecutar sea la siguiente:
 // a es igual a 10.
