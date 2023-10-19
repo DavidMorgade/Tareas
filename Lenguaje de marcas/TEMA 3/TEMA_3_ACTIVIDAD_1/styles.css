@@ -1,0 +1,89 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+:root {
+  --main-color: rgb(0, 0, 0);
+  --secondary-color: #feb703;
+  --accent-color: #ff6600;
+  --light-color: #ffffff;
+}
+
+body {
+  background-color: var(--light-color);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__heading {
+  margin: 2rem 0 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--light-color);
+  padding: 3rem;
+  margin: 2rem;
+}
+.main__heading {
+  margin: 0;
+  font-weight: 500;
+  text-align: left;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+.main__imgContainer {
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 2rem;
+}
+.main__img {
+  width: 100%;
+}
+.main__text {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+.main__list {
+  text-align: left;
+  align-self: flex-start;
+  padding: 0 2rem;
+  margin: 0;
+  line-height: 1.7;
+  list-style: none;
+}
+.main__list li {
+  position: relative;
+}
+.main__list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -2rem;
+  top: -0.4rem;
+  z-index: 10;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(./images/marca-de-verificacion.png);
+}
+.main__button {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  align-self: flex-start;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--secondary-color);
+  }
+}
