@@ -107,21 +107,35 @@
           </li>
         </ul>
       </article>
-      <article>
-        <h2>Get in touch</h2>
-        <p>Discover how I can help your business</p>
-        <form>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
+      <article class="contact">
+        <h2 class="contact__heading">Get in touch</h2>
+        <p class="contact__text">Discover how I can help your business</p>
+        <form class="contact__form">
+          <input
+            class="contact__form--name"
+            type="text"
+            placeholder="Tu Nombre"
+          />
+          <input
+            class="contact__form--email"
+            type="email"
+            placeholder="Correo Electronico"
+          />
           <textarea
+            class="contact__form--message"
             name="message"
             id="message"
             cols="30"
             rows="10"
-            placeholder="Message"
+            placeholder="Tu Mensaje..."
           ></textarea>
-          <input type="submit" value="Send" />
+          <input
+            class="contact__form--btn btn"
+            type="submit"
+            value="Contactame"
+          />
         </form>
+        <p class="contact__fecha">Lunes - Viernes: 9am - 7pm</p>
       </article>
     </section>
   </body>

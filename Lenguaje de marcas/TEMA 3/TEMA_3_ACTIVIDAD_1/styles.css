@@ -7,7 +7,17 @@
   --accent-color: #ff6600;
   --light-color: #ffffff;
 }
+/* GLOBAL CSS */
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
+/* END OF */
 body {
   background-color: var(--light-color);
 }
@@ -90,6 +100,7 @@ header {
 .section {
   background-color: var(--secondary-color);
   margin: 0;
+  padding-bottom: 5rem;
 }
 .experience {
 }
@@ -157,4 +168,58 @@ header {
   gap: 5rem;
   text-align: right;
   align-items: flex-end;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__heading {
+  margin: 0;
+  padding: 2rem 4rem 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.contact__text {
+  font-size: 1.2rem;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 1rem;
+}
+.contact__form--name {
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.2rem;
+}
+.contact__form--email {
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.2rem;
+}
+.contact__form--message {
+  border: none;
+
+  padding: 0.5rem 0.5rem;
+  height: 5rem;
+  resize: none;
+  font-size: 1rem;
+}
+.contact__form--btn {
+  background-color: var(--main-color);
+  color: var(--light-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.contact__fecha {
+  margin: 0;
+  font-weight: 300;
+  font-size: 0.8rem;
 }
