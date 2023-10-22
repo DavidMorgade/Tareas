@@ -7,6 +7,9 @@
   --accent-color: #ff6600;
   --light-color: #ffffff;
 }
+img {
+  display: block;
+}
 /* GLOBAL CSS */
 .btn {
   border: none;
@@ -216,10 +219,30 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.8rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 .contact__fecha {
   margin: 0;
   font-weight: 300;
   font-size: 0.8rem;
+}
+/* Footer */
+.copyright {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 50%;
+}
+.footer__lista li a img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
 }
