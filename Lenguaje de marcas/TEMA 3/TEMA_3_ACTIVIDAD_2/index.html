@@ -1,0 +1,90 @@
+<!-- A partir de las etiquetas estudiadas en el tema, realizar un Menú de restaurante.
+Utilizando las etiquetas vistas a lo largo del tema, crea un menú de restaurante donde
+se incluya.
+ Nombre restaurante
+ Fecha
+ Precio del menú
+ Primer plato
+ Segundo plato
+ Postre
+ Nota final indicando que no están incluidas las bebidas y que si se pide café no
+se puede pedir postre
+Debes de diferenciar cada uno de los apartados con títulos, y estructurar el
+contenido con capas (div). Intenta que quede un diseño atractivo incluyendo los
+elementos que consideres necesarios -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menú del Día</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="normalize.css" />
+      </head>
+      <body>
+        <header class="header">
+          <h1 class="header__heading">Restaurante David Morgade</h1>
+        </header>
+        <main class="menu">
+          <h2>Menu del día</h2>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <img
+                class="menu__imagen"
+                src="./images/ensalada.jpg"
+                alt="Imagen Ensalada"
+              />
+              <div>
+                <h2 class="menu__item-title">Primer Plato</h2>
+                <p class="menu__item-description">Ensalada César</p>
+                <p class="menu__item-price">$10</p>
+              </div>
+            </li>
+            <li class="menu__item">
+              <img
+                class="menu__imagen"
+                src="./images/salmon.jpg"
+                alt="Imagen salmon"
+              />
+              <div>
+                <h2 class="menu__item-title">Segundo Plato</h2>
+                <p class="menu__item-description">Salmón a la Parrilla</p>
+                <p class="menu__item-price">$15</p>
+              </div>
+            </li>
+            <li class="menu__item">
+              <img
+                class="menu__imagen"
+                src="./images/tarta.jpg"
+                alt="Imagen Tarta"
+              />
+              <div>
+                <h2 class="menu__item-title">Postre</h2>
+                <p class="menu__item-description">Tarta de Chocolate</p>
+                <p class="menu__item-price">$8</p>
+              </div>
+            </li>
+          </ul>
+          <footer class="menu__note">
+            <p>No incluye bebidas. Si pides café, no puedes pedir postre.</p>
+          </footer>
+        </main>
+      </body>
+    </html>
+  </body>
+</html>
