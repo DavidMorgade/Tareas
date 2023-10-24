@@ -20,24 +20,27 @@ public class TEMA_4_ACTIVIDAD_2 {
     Scanner sc = new Scanner(System.in);
     int[] arrayAleatorio = generarArrayAleatorio(0, 50);
     mostrarArray(arrayAleatorio);
-    int opcion;
     boolean salir = false;
     while (!salir) {
-      System.out.println("Menú");
-      System.out.println("1. Mostrar el array.");
-      System.out.println("2. Mostrar el array en orden inverso.");
-      System.out.println("3. Buscar el número menor.");
-      System.out.println("4. Buscar el número mayor.");
-      System.out.println("5. Comprobar si existe un número en el array.");
-      System.out.println("6. Cambiar el valor de un número.");
-      System.out.println("7. Cambiar dos números de posición.");
-      System.out.println("0. Salir");
-      try {
-        opcion = sc.nextInt();
-      } catch (Exception e) {
-        System.out.println("Introduce un número.");
-        opcion = sc.nextInt();
-      }
+      int opcion = -1;
+
+      do {
+        System.out.println("Menú");
+        System.out.println("1. Mostrar el array.");
+        System.out.println("2. Mostrar el array en orden inverso.");
+        System.out.println("3. Buscar el número menor.");
+        System.out.println("4. Buscar el número mayor.");
+        System.out.println("5. Comprobar si existe un número en el array.");
+        System.out.println("6. Cambiar el valor de un número.");
+        System.out.println("7. Cambiar dos números de posición.");
+        System.out.println("0. Salir");
+        try {
+          opcion = sc.nextInt();
+        } catch (Exception e) {
+          System.out.println("Opción no válida.");
+          sc.nextLine();
+        }
+      } while (opcion < 0 || opcion > 7);
       switch (opcion) {
         case 0:
           salir = true;
