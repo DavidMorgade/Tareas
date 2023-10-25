@@ -1,0 +1,10 @@
+/* básicos y root */
+:root {
+  --colorFondo: #fff7f0;
+  --colorLetra: #030303;
+}
+body {
+  background-color: var(--colorFondo);
+  color: var(--colorLetra);
+  font-family: "Roboto", sans-serif;
+}
