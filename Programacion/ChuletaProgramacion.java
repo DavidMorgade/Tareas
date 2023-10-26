@@ -17,6 +17,7 @@ public class ChuletaProgramacion {
     int numero = 5; // Variable modificable
   }
 
+  // Chuleta de metodos
   public static void metodos() {
     // Llamada a un metodo
     metodo();
@@ -45,18 +46,6 @@ public class ChuletaProgramacion {
     int numeroEntero = 5; // Declaracion de una variable con asignacion de valor
     int numeroEntero1, numeroEntero2; // Declaracion de varias variables
     int numeroEntero1 = 5, numeroEntero2 = 10; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1 = 5, numeroEntero2; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1, numeroEntero2 = 10; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1 = 5, numeroEntero2 = 10, numeroEntero3 = 15; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1 = 5, numeroEntero2 = 10, numeroEntero3; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1, numeroEntero2 = 10, numeroEntero3 = 15; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1, numeroEntero2, numeroEntero3 = 15; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1, numeroEntero2, numeroEntero3; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1 = 5, numeroEntero2, numeroEntero3; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1, numeroEntero2 = 10, numeroEntero3; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1, numeroEntero2, numeroEntero3 = 15; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1 = 5, numeroEntero2, numeroEntero3 = 15; // Declaracion de varias variables con asignacion de valor
-    int numeroEntero1 = 5, numeroEntero2 = 10, numeroEntero3; // Declaracion de varias variables con asignacion de valor
   }
 
   // Chuleta de operadores
