@@ -12,10 +12,23 @@ public class ChuletaProgramacion {
     /*
      * Comentario de varias lineas
      */
-
+    // Parametros de una clase
+    final int numero = 5; // Variable fija
+    int numero = 5; // Variable modificable
   }
 
-  // Explicando los tipos de datos
+  public static void metodos() {
+    // Llamada a un metodo
+    metodo();
+    // Llamada a un metodo con parametros
+    metodoConParametros(5, 10);
+    // Llamada a un metodo con retorno
+    int numero = metodoConRetorno();
+    // Llamada a un metodo con retorno y parametros
+    int numero = metodoConRetornoYParametros(5, 10);
+  }
+
+  // Chuleta de variables
   public static void tiposDeDatos() {
     // Tipos de datos
     int numeroEntero = 5; // Numero entero
@@ -25,6 +38,28 @@ public class ChuletaProgramacion {
     boolean booleano = true; // Booleano
   }
 
+  // Chuleta de declaraciones de variables
+  public static void declaracionesDeVariables() {
+    // Declaraciones de variables
+    int numeroEntero; // Declaracion de una variable
+    int numeroEntero = 5; // Declaracion de una variable con asignacion de valor
+    int numeroEntero1, numeroEntero2; // Declaracion de varias variables
+    int numeroEntero1 = 5, numeroEntero2 = 10; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1 = 5, numeroEntero2; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1, numeroEntero2 = 10; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1 = 5, numeroEntero2 = 10, numeroEntero3 = 15; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1 = 5, numeroEntero2 = 10, numeroEntero3; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1, numeroEntero2 = 10, numeroEntero3 = 15; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1, numeroEntero2, numeroEntero3 = 15; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1, numeroEntero2, numeroEntero3; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1 = 5, numeroEntero2, numeroEntero3; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1, numeroEntero2 = 10, numeroEntero3; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1, numeroEntero2, numeroEntero3 = 15; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1 = 5, numeroEntero2, numeroEntero3 = 15; // Declaracion de varias variables con asignacion de valor
+    int numeroEntero1 = 5, numeroEntero2 = 10, numeroEntero3; // Declaracion de varias variables con asignacion de valor
+  }
+
+  // Chuleta de operadores
   public static void operadores() {
     // Operadores
     int numero1 = 5;
@@ -52,6 +87,7 @@ public class ChuletaProgramacion {
     booleano = !numero1; // Not
   }
 
+  // Chuleta de arrays
   public static void arrays() {
     // Arrays
     int[] arrayEnteros = new int[10]; // Array de enteros de 10 posiciones
@@ -87,9 +123,13 @@ public class ChuletaProgramacion {
     }
     // Algoritmo de ordenacion metodo de la burbuja
     int[] arrayEnteros = { 5, 4, 3, 2, 1 };
+    // Recorremos las posiciones del array
     for (int i = 0; i < arrayEnteros.length; i++) {
+      // Recorremos las posiciones del array menos la ultima
       for (int j = 0; j < arrayEnteros.length - 1; j++) {
+        // Si el valor de la posicion actual es mayor que el valor de la posicion siguiente
         if (arrayEnteros[j] > arrayEnteros[j + 1]) {
+          // Intercambiamos los valores
           int aux = arrayEnteros[j];
           arrayEnteros[j] = arrayEnteros[j + 1];
           arrayEnteros[j + 1] = aux;
@@ -98,6 +138,7 @@ public class ChuletaProgramacion {
     }
   }
 
+  // Chuleta de estructuras de control
   public static void estructurasDeControl() {
     // Estructuras de control
     // Podriamos usar un if else en caso de que sea necesario para varias condiciones
