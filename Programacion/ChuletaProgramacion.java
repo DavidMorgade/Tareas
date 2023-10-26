@@ -160,5 +160,32 @@ public class ChuletaProgramacion {
     do {
       // Bucle do while
     } while (true);
+    // Estructura de try catch finally
+    try {
+      // Codigo que puede lanzar una excepcion
+    } catch (Exception e) {
+      // Codigo que se ejecuta si se lanza una excepcion
+    } finally {
+      // Codigo que se ejecuta siempre
+    }
+  }
+
+  // Tipos Excepciones
+  public static void tiposExcepciones() {
+    // Excepciones
+    // ArithmeticException
+    int numero = 5 / 0;
+    // ArrayIndexOutOfBoundsException
+    int[] arrayEnteros = new int[10];
+    int numero = arrayEnteros[10];
+    // NumberFormatException
+    int numero = Integer.parseInt("a");
+    // NullPointerException
+    String cadena = null;
+    int longitud = cadena.length();
+    // IOException
+    FileReader fr = new FileReader("archivo.txt");
+    // ClassNotFoundException
+    Class.forName("com.mysql.jdbc.Driver");
   }
 }
