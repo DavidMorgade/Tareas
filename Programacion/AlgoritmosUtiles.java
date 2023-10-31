@@ -1,3 +1,5 @@
+package Programacion;
+
 public class AlgoritmosUtiles {
 
   public static void main(String[] args) {}

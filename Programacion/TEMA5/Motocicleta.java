@@ -5,6 +5,8 @@
 // Para terminar, crea dos objetos de la clase Motocicleta.
 // Para el desarrollo de esta actividad debéis crear un proyecto en NetBeans para realizar el ejercicio
 
+package Programacion.TEMA5;
+
 public class Motocicleta {
 
   // Atributos
