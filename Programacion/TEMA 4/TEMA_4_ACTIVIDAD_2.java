@@ -30,7 +30,6 @@ public class TEMA_4_ACTIVIDAD_2 {
 
       // do while donde mostraremos el menu con las diferentres opciones.
       do {
-        System.out.println("Menú");
         System.out.println("1. Mostrar el array.");
         System.out.println("2. Mostrar el array en orden inverso.");
         System.out.println("3. Buscar el número menor.");
