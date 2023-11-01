@@ -1,0 +1,161 @@
+<!-- Se pretende crear una página web que contenga un formulario para gestionar
+incidencias técnicas en una empresa, que llegarán al departamento de informática
+para su procesamiento.
+Crear un formulario que contenga la siguiente información:
+ Nombre: (es el nombre del usuario que pone la incidencia)
+ Correo electrónico.
+ Departamento: (lista despegable con los departamentos. Invéntate 5
+departamentos de la empresa).
+ Urgente: (es una casilla de verificación indicando si la incidencia es urgente o
+no).
+ Ubicación: (control de tipo radio donde se debe elegir en qué edificio está el
+usuario. Los valores son principal, auxiliar y externo).
+ Descripción: (Textarea con la descripción de la incidencia)
+ Botones: de envío y reseteo de la información.
+ Los controles deben estar agrupados en tres grupos:
+o Datos personales (nombre, correo electrónico, departamento)
+o Datos incidencia (urgente, ubicación y descripción)
+o Envío (Botones de envío y reseteo) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incidencias técnicas David Morgade</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="top">
+        <h1 class="top__heading">Incidencias IT David Morgade</h1>
+        <p class="top__text"></p>
+          Aquí gestionaremos las incidencias técnicas de la empresa, rellena el formulario y pulsa enviar.
+        </p>
+      </section>
+      <section class="bottom">
+        <header class="bottom__header">
+          <div class="bottom__textbox">
+            <p class="bottom__text bottom__text--bold">
+              Rellena el formulario para gestionar tu incidencia
+              <span class="bottom__text">Contestaremos lo más rápido posible</span>
+            </p>
+          </div>
+        </header>
+        <form class="form">
+          <div class="form__inputContainer">
+            <label for="firstName">Nombre</label>
+            <input
+              data-name="First Name"
+              type="text"
+              id="firstName"
+              class="form__input"
+              placeholder="Nombre"
+            />
+          </div>
+          <div class="form__inputContainer">
+            <label for="email">Correo electrónico</label>
+            <input
+              data-name="Correo electrónico"
+              type="text"
+              id="email"
+              class="form__input"
+                placeholder="Correo electrónico"
+            />
+          </div>
+          <div class="form__select">
+                <label for="department">Departamento</label>
+                <p>Selecciona el departamento</p>
+                <select
+                data-name="Departamento"
+                id="department"
+                class="form__input"
+                >
+                <option value="IT">IT</option>
+                <option value="RRHH">RRHH</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Ventas">Ventas</option>
+                <option value="Finanzas">Finanzas</option>
+                </select>
+                    <p>Urgente</p>
+                    <label for="urgent">Urgente</label>
+                    <input
+                    data-name="Urgente"
+                    type="checkbox"
+                    id="urgent"
+                    class="form__input"
+                    />
+            </div>
+            <p>Ubicación:</p>
+
+            <div class="form__radio">
+                <div>
+                <p>Principal</p>
+                <label for="main">Principal</label>
+                <input
+                data-name="Ubicación"
+                type="radio"
+                id="main"
+                name="location"
+                class="form__input"
+                />
+            </div>
+            <div>
+                <p>Auxiliar</p>
+                <label for="aux">Auxiliar</label>
+                <input
+                data-name="Ubicación"
+                type="radio"
+                id="aux"
+                name="location"
+                class="form__input"
+                />
+            </div>
+            <div>
+                <p>Externo</p>
+                <label for="external">Externo</label>
+                <input
+                data-name="Ubicación"
+                type="radio"
+                id="external"
+                name="location"
+                class="form__input"
+                />
+                </div>
+            </div>
+            <div class="form__textArea">
+                <label for="description">Descripción</label>
+                <textarea
+                data-name="Descripción"
+                id="description"
+                class="form__input form__input--textarea"
+                placeholder="Descripción"
+                ></textarea>
+            </div>
+            <div class="form__buttons">
+                <button type="reset" class="form__reset form__submit">
+                    Resetear
+                </button>
+                <button type="submit" class="form__submit">
+                    Enviar incidencia
+                </button>
+            </div>
+          <div class="form__bottom">
+            <p class="form__text">
+              By clicking the button, you are agreeing to our
+              <span class="form__terms">Terms and Services</span>
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
