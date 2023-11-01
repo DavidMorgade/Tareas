@@ -1,0 +1,55 @@
+<!-- Se pretende crear el plano de unas oficinas gracias a tablas en HTML.
+Se debe crear una tabla en HTML que tenga el siguiente aspecto.
+. -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TEMA 5 ACTIVIDAD 2</title>
+    <style>
+      /* Añadimos bordes chulos */
+      table,
+      th,
+      td {
+        border: 4px double black;
+        padding: 1px;
+      }
+      th {
+        background-color: #4caf50;
+        color: white;
+      }
+      /* Centra la tabla en el body */
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tabla de departamentos -->
+    <table>
+      <tr>
+        <td>Departamento 1</td>
+        <td>Sala Multiusos</td>
+        <td colspan="2">Departamento 2</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td rowspan="2">Sala de reuniones</td>
+        <td>4</td>
+        <td rowspan="3">Sala auxiliar I</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center">Sala Auxiliar 2</td>
+        <td>6</td>
+      </tr>
+    </table>
+  </body>
+</html>
