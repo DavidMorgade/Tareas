@@ -50,6 +50,17 @@ public class AlgoritmosUtiles {
     }
   }
 
+  //////////////////////////MATRICES//////////////////////////////
+  // Mostrar matriz
+  public static void mostrarMatriz(int[][] matriz) {
+    for (int i = 0; i < matriz.length; i++) {
+      for (int j = 0; j < matriz[i].length; j++) {
+        System.out.print(matriz[i][j] + " ");
+      }
+      System.out.println();
+    }
+  }
+
   // Comprobar si un numero existe dentro de un array
   public static boolean buscarNumero(int[] array, int numero) {
     for (int i = 0; i < array.length; i++) {
