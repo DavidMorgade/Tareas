@@ -11,10 +11,12 @@ public class MatrizUnosCeros {
     int numeroFilas = sc.nextInt();
     System.out.println("Introduce el numero de columnas:");
     int numeroColumnas = sc.nextInt();
+    System.out.println("Introduce el numero de alto:");
+    int numeroAlto = sc.nextInt();
 
-    int[][] matriz = crearMatriz(numeroFilas, numeroColumnas);
+    int[][][] matriz = crearMatriz3d(numeroFilas, numeroColumnas, numeroAlto);
 
-    mostrarMatriz(matriz);
+    mostrarMatriz3d(matriz);
   }
 
   public static int[][] crearMatriz(int numeroFilas, int numeroColumnas) {
@@ -41,5 +43,35 @@ public class MatrizUnosCeros {
       }
       System.out.println();
     }
+  }
+
+  // Mostrar matriz 3d
+  public static void mostrarMatriz3d(int[][][] matriz) {
+    for (int i = 0; i < matriz.length; i++) {
+      for (int j = 0; j < matriz[i].length; j++) {
+        for (int k = 0; k < matriz[i][j].length; k++) {
+          System.out.print(matriz[i][j][k] + " ");
+        }
+      }
+      System.out.println();
+    }
+  }
+
+  // Crear matriz de 3
+  public static int[][][] crearMatriz3d(
+    int numeroFilas,
+    int numeroColumnas,
+    int numeroAlto
+  ) {
+    int[][][] matriz = new int[numeroFilas][numeroColumnas][numeroAlto];
+    for (int i = 0; i < numeroFilas; i++) {
+      for (int j = 0; j < numeroColumnas; j++) {
+        for (int k = 0; k < numeroAlto; k++) {
+          matriz[i][j][k] = 0;
+        }
+      }
+    }
+
+    return matriz;
   }
 }

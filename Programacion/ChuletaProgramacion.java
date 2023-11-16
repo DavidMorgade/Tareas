@@ -189,3 +189,101 @@ public class ChuletaProgramacion {
     Class.forName("com.mysql.jdbc.Driver");
   }
 }
+// CLASES
+// Clase abstracta
+abstract class ClaseAbstracta {
+  // Atributos
+  private int numero;
+  // Constructor
+  public ClaseAbstracta(int numero) {
+    this.numero = numero;
+  }
+
+  // Metodo abstracto
+  public abstract void metodoAbstracto();
+}
+// Clase
+class Clase extends ClaseAbstracta {
+  // Atributos
+  private int numero;
+  // Constructor
+  public Clase(int numero) {
+    super(numero);
+    this.numero = numero;
+  }
+  // Constructor
+  public Clase() {
+    this(5);
+  }
+  // Getters y setters
+  public int getNumero() {
+    return numero;
+  }
+  public void setNumero(int numero) {
+    this.numero = numero;
+  }
+
+  // Metodo
+  public void metodo() {
+    // Codigo
+  }
+
+  // Metodo abstracto
+  @Override
+  public void metodoAbstracto() {
+    // Codigo
+  }
+}
+// Interfaz
+interface Interfaz {
+  // Atributos
+  public static final int numero = 5;
+  // Metodos
+  public void metodo();
+}
+// Interfaz 2
+interface Interfaz2 {
+  // Metodos
+  public void metodo2();
+}
+
+// Clase con interfaz
+class ClaseConInterfaz implements Interfaz {
+  // Metodo
+  @Override
+  public void metodo() {
+    // Codigo
+  }
+}
+// Clase con interfaz y herencia
+class ClaseConInterfazYHerencia extends Clase implements Interfaz {
+  // Constructor
+  public ClaseConInterfazYHerencia(int numero) {
+    super(numero);
+  }
+
+  // Metodo
+  @Override
+  public void metodo() {
+    // Codigo
+  }
+}
+// Clase con interfaz y herencia multiple
+class ClaseConInterfazYHerenciaMultiple extends Clase implements Interfaz, Interfaz2 {
+  // Constructor
+  public ClaseConInterfazYHerenciaMultiple(int numero) {
+    super(numero);
+  }
+
+  // Metodo
+  @Override
+  public void metodo() {
+    // Codigo
+  }
+
+  // Metodo
+  @Override
+  public void metodo2() {
+    // Codigo
+  }
+}

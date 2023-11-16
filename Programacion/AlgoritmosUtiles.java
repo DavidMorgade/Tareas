@@ -61,6 +61,42 @@ public class AlgoritmosUtiles {
     }
   }
 
+  // Crear matriz por parametros
+  public static int[][] crearMatriz(int numeroFilas, int numeroColumnas) {
+    int[][] matriz = new int[numeroFilas][numeroColumnas];
+    for (int i = 0; i < numeroFilas; i++) {
+      for (int j = 0; j < numeroColumnas; j++) {
+        if (
+          i == 0 || j == 0 || i == numeroFilas - 1 || j == numeroColumnas - 1
+        ) {
+          matriz[i][j] = 1;
+        } else {
+          matriz[i][j] = 0;
+        }
+      }
+    }
+
+    return matriz;
+  }
+
+  // Crear matriz de 3
+  public static int[][][] crearMatriz3d(
+    int numeroFilas,
+    int numeroColumnas,
+    int numeroAlto
+  ) {
+    int[][][] matriz = new int[numeroFilas][numeroColumnas][numeroAlto];
+    for (int i = 0; i < numeroFilas; i++) {
+      for (int j = 0; j < numeroColumnas; j++) {
+        for (int k = 0; k < numeroAlto; k++) {
+          matriz[i][j][k] = 0;
+        }
+      }
+    }
+
+    return matriz;
+  }
+
   // Comprobar si un numero existe dentro de un array
   public static boolean buscarNumero(int[] array, int numero) {
     for (int i = 0; i < array.length; i++) {
