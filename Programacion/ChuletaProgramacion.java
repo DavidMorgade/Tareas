@@ -287,3 +287,5 @@ class ClaseConInterfazYHerenciaMultiple extends Clase implements Interfaz, Inter
     // Codigo
   }
 }
+
+
