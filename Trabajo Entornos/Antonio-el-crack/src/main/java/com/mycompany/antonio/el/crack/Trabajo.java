@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author Antonio "el crack"
  */
 public class Trabajo {
+
   /**
    * @param args the command line arguments
    */
@@ -28,5 +29,7 @@ public class Trabajo {
     numeros.contarParesImpares();
     // Mostramos el conteo de pares e impares
     numeros.mostrarConteoParesImpares();
+    // Cerramos el Scanner
+    sc.close();
   }
 }
