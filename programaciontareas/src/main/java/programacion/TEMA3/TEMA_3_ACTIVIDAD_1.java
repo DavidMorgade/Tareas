@@ -14,6 +14,7 @@ zodíaco.
  Acuario: 21/01 – 19/02
  Piscis: 20/02 – 20/03
  */
+package programaciontareas.src.main.java.programacion.TEMA3;
 
 import java.util.Scanner;
 

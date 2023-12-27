@@ -14,6 +14,8 @@ se pueda entender a la perfección.
 No te olvides de declarar un Scanner para cada tipo de datos
 */
 
+package programaciontareas.src.main.java.programacion.TEMA2;
+
 import java.util.Scanner;
 
 public class TEMA_2_ACTIVDAD_2 {

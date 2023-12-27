@@ -1,3 +1,5 @@
+package programaciontareas.src.main.java.programacion.TEMA8;
+
 // Crea la clase llamada LeerPorTeclado. Esta clase no contendrá atributos e implementará los siguientes
 // métodos estáticos:
 //  leerString: Este método pedirá por teclado un String. Este método recibirá como parámetro un String

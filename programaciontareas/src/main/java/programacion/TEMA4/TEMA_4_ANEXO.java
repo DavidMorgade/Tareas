@@ -1,5 +1,6 @@
 // Ejercicio
 // Crear un ejemplo de uso con una lista ordenada de números y probar el algoritmo anterior
+package programaciontareas.src.main.java.programacion.TEMA4;
 
 public class TEMA_4_ANEXO {
 

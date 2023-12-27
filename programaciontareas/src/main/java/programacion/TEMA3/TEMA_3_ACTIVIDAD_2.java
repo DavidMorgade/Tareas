@@ -8,6 +8,8 @@ este registro, el cual termina siempre al leer un país con indicativo ’@’, 
 hortalizas exporta y las toneladas que exporta
  */
 
+package programaciontareas.src.main.java.programacion.TEMA3;
+
 import java.util.Scanner;
 
 public class TEMA_3_ACTIVIDAD_2 {

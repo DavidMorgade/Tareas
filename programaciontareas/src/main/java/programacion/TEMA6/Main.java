@@ -1,3 +1,5 @@
+package programaciontareas.src.main.java.programacion.TEMA6;
+
 // Realiza un método main en el que se creen 2 cartas, la primera con el constructor por defecto y se inicialice
 // con los métodos set. La segunda se creará con el constructor con parámetros, habiendo leído por teclado
 // todos los datos antes. Después se mostrarán ambas cartas con el método mostrarCarta() y se compararán

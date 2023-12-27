@@ -1,4 +1,4 @@
-package TEMA_4;
+package programaciontareas.src.main.java.programacion.TEMA4;
 
 public class TEMA_4_ACTIVIDAD_1 {
 

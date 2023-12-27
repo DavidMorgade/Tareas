@@ -21,6 +21,8 @@
 // o 0 Si las dos cartas son iguales.
 // o -1 Si gana la carta que llega como parámetro.
 
+package programaciontareas.src.main.java.programacion.TEMA6;
+
 public class Carta {
 
   private int numero;

@@ -8,6 +8,7 @@
 // Crea dos agendas más iguales a la primera Agenda, para hacer la segunda de estas utiliza el constructor
 // por copia.
 // Muestra todos los días de las Agendas para ver que son iguales
+package programaciontareas.src.main.java.programacion.TEMA7;
 
 public class Agenda {
 

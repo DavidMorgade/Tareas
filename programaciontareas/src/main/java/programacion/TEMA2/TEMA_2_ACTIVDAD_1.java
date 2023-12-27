@@ -6,6 +6,8 @@
 // “a = 10” ni “b = 5”.
 // 3. No puedes tocar las líneas que sacan por pantalla el mensaje.
 
+package programaciontareas.src.main.java.programacion.TEMA2;
+
 public class TEMA_2_ACTIVDAD_1 {
 
   public static void main(String[] args) {

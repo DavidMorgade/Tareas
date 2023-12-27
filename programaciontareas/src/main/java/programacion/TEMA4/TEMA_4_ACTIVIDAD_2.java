@@ -12,6 +12,8 @@ Menú
 0. Salir
  */
 
+package programaciontareas.src.main.java.programacion.TEMA4;
+
 import java.util.Scanner;
 
 public class TEMA_4_ACTIVIDAD_2 {
@@ -49,31 +51,31 @@ public class TEMA_4_ACTIVIDAD_2 {
       } while (opcion < 0 || opcion > 7);
       // Una vez tenemos la opcion usamos switch para evaluar cada caso
       switch (opcion) {
-          // salir del programa
+        // salir del programa
         case 0:
           salir = true;
           break;
-          // mostrar Array
+        // mostrar Array
         case 1:
           mostrarArray(arrayAleatorio);
           break;
-          // mostrar Array inverso
+        // mostrar Array inverso
         case 2:
           mostrarArrayInverso(arrayAleatorio);
           break;
-          // Buscar el numero menor
+        // Buscar el numero menor
         case 3:
           System.out.println(
             "El número menor es: " + buscarNumeroMenor(arrayAleatorio)
           );
           break;
-          // Busca el numero mayor
+        // Busca el numero mayor
         case 4:
           System.out.println(
             "El número mayor es: " + buscarNumeroMayor(arrayAleatorio)
           );
           break;
-          // Busca el numero dentro del Array
+        // Busca el numero dentro del Array
         case 5:
           System.out.println("Introduce un número: ");
           int numero = sc.nextInt();
@@ -83,7 +85,7 @@ public class TEMA_4_ACTIVIDAD_2 {
             System.out.println("El número " + numero + " no está en el array.");
           }
           break;
-          // Cambia el numero que elijamos dentro del array
+        // Cambia el numero que elijamos dentro del array
         case 6:
           System.out.println(
             "Introduce el número que quieres cambiar en el array: "
@@ -106,7 +108,7 @@ public class TEMA_4_ACTIVIDAD_2 {
             );
           }
           break;
-          // cambiamos 2 numeros entre si que existan en el array
+        // cambiamos 2 numeros entre si que existan en el array
         case 7:
           System.out.println(
             "Introduce el primer número que quieres cambiar de posición en el array: "
@@ -136,20 +138,21 @@ public class TEMA_4_ACTIVIDAD_2 {
             );
           }
           break;
-          // No es valida la opcion
+        // No es valida la opcion
         default:
           System.out.println("Opción no válida.");
       }
     }
   }
 
-  // Método encargado de mostrar el array 
+  // Método encargado de mostrar el array
   public static void mostrarArray(int[] array) {
     // Un Loop normal que se encarga de recorrer el array desde 0 hasta el final (array.length)
     for (int i = 0; i < array.length; i++) {
       System.out.println(array[i]);
     }
   }
+
   // Método encargado de mostrar el array al reves
   public static void mostrarArrayInverso(int[] array) {
     // Loop inverso que recorre el array desde la última posicion hasta la posicion 0
@@ -157,6 +160,7 @@ public class TEMA_4_ACTIVIDAD_2 {
       System.out.println(array[i]);
     }
   }
+
   // Método encargado de buscar el numero más pequeño dentro del array
   public static int buscarNumeroMenor(int[] array) {
     // Tomamos de referencia el primer valor del array (0)
@@ -171,6 +175,7 @@ public class TEMA_4_ACTIVIDAD_2 {
     // Devolvemos el menor
     return menor;
   }
+
   // Método encargado de buscar el numero mayor en el array
   public static int buscarNumeroMayor(int[] array) {
     // Tomamos de referencia el primer valor como mayor
@@ -185,6 +190,7 @@ public class TEMA_4_ACTIVIDAD_2 {
     // Devolvemos el numero mayor
     return mayor;
   }
+
   // Método encargado de buscar un numero dentro del array
   public static boolean buscarNumero(int[] array, int numero) {
     for (int i = 0; i < array.length; i++) {
@@ -196,10 +202,12 @@ public class TEMA_4_ACTIVIDAD_2 {
     // Si no se encuentra devuelvo false
     return false;
   }
+
   // Método para generar un numero aleatorio
   public static int generarNumeroAleatorio(int min, int max) {
     return (int) (Math.random() * (max - min + 1) + min);
   }
+
   // Método para generar un Array Aleatorio de 50 valores
   public static int[] generarArrayAleatorio(int min, int max) {
     // Declaramos el array con 50 posiciones
