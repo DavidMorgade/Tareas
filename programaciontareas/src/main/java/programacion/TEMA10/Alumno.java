@@ -6,3 +6,12 @@ public class Alumno extends Persona {
     super(nombre, apellido1, apellido2);
   }
 }
+
+class Prueba {
+
+  public static void main(String[] args) {
+    Alumno alumno = new Alumno(null, null, null);
+
+    System.out.println(alumno.toString());
+  }
+}
