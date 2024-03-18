@@ -10,7 +10,7 @@
 //  Los métodos get y set de todos los atributos.
 //  Un método imprimirPresupuesto, que no pueda sobrescribirse
 
-package programaciontareas.src.main.java.programacion.TEMA9;
+package programacion.TEMA9;
 
 public class Presupuesto {
 
