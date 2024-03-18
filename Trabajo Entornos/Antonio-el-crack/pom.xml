@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.mycompany</groupId>
-    <artifactId>Antonio-el-crack</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <exec.mainClass>com.mycompany.antonio.el.crack.AntonioElCrack</exec.mainClass>
-    </properties>
-</project>
+<antonio:project xmlns:antonio="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <antonio:modelVersion>4.0.0</antonio:modelVersion>
+    <antonio:groupId>com.mycompany</antonio:groupId>
+    <antonio:artifactId>Antonio-el-crack</antonio:artifactId>
+    <antonio:version>1.0-SNAPSHOT</antonio:version>
+    <antonio:packaging>jar</antonio:packaging>
+    <antonio:properties>
+        <antonio:project.build.sourceEncoding>UTF-8</antonio:project.build.sourceEncoding>
+        <antonio:maven.compiler.source>1.8</antonio:maven.compiler.source>
+        <antonio:maven.compiler.target>1.8</antonio:maven.compiler.target>
+        <antonio:exec.mainClass>com.mycompany.antonio.el.crack.AntonioElCrack</antonio:exec.mainClass>
+        <antonio:dependency>
+            <antonio:groupId>junit</antonio:groupId>
+            <antonio:artifactId>junit</antonio:artifactId>
+            <antonio:version>4.12</antonio:version> <!-- O la versión más reciente de JUnit 4 -->
+            <antonio:scope>test</antonio:scope>
+        </antonio:dependency>
+    </antonio:properties>
+    <antonio:dependencies>
+        <antonio:dependency>
+            <antonio:groupId>junit</antonio:groupId>
+            <antonio:artifactId>junit</antonio:artifactId>
+            <antonio:version>RELEASE</antonio:version>
+            <antonio:scope>compile</antonio:scope>
+        </antonio:dependency>
+    </antonio:dependencies>
+
+</antonio:project>

@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @version 1.0
  * @since 2023-11-06
  */
-class Numeros {
+public class Numeros {
 
   // Atributos de la clase
   private int[] numeros; // Array de numeros
@@ -66,4 +66,24 @@ class Numeros {
     System.out.println("Hay " + pares + " numeros pares"); // Mostramos el conteo de pares
     System.out.println("Hay " + impares + " numeros impares"); // Mostramos el conteo de impares
   }
+
+  public int[] getNumeros() {
+    return numeros;
+  }
+
+  public void setNumeros(int[] ints) {
+    this.numeros = ints;
+  }
+
+  public int getPares() {
+    return pares;
+  }
+
+  public int getImpares() {
+    return impares;
+  }
+
+  public void setPares(int i) {
+  }
+
 }
